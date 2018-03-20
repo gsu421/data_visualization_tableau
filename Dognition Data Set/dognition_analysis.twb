@@ -1,0 +1,1165 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 9200.16.0114.0856                                -->
+<workbook source-platform='win' version='9.2' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='dog_id_max_ranks (dognition_data_aggregated_by_dogid)' inline='true' name='excel-direct.1ps9gs50pd4cp61dhcytx07q4hay' version='9.2'>
+      <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:\Users\George Su\Box Sync\Business Analysis\Data Visualization and Communication with Tableau\Dognition Data Set\dognition_data_aggregated_by_dogid.xlsx' interpretationMode='0' password='' server='' username='' validate='no'>
+        <relation name='dog_id_max_ranks' table='[dog_id_max_ranks$]' type='table'>
+          <columns gridOrigin='A1:AD10001:no:A1:AD10001:0' header='yes' outcome='2'>
+            <column datatype='string' name='Dog ID' ordinal='0' />
+            <column datatype='integer' name='Total Tests Completed' ordinal='1' />
+            <column datatype='integer' name='Mean ITI (days)' ordinal='2' />
+            <column datatype='real' name='Mean ITI (minutes)' ordinal='3' />
+            <column datatype='real' name='Median ITI (days)' ordinal='4' />
+            <column datatype='real' name='Median ITI (minutes)' ordinal='5' />
+            <column datatype='real' name='Time diff between first and last game (days)' ordinal='6' />
+            <column datatype='real' name='Time diff between first and last game (minutes)' ordinal='7' />
+            <column datatype='string' name='User ID' ordinal='8' />
+            <column datatype='string' name='Gender' ordinal='9' />
+            <column datatype='integer' name='Birthday' ordinal='10' />
+            <column datatype='string' name='Breed' ordinal='11' />
+            <column datatype='string' name='Breed_Type' ordinal='12' />
+            <column datatype='string' name='Breed_Group' ordinal='13' />
+            <column datatype='integer' name='Weight' ordinal='14' />
+            <column datatype='integer' name='Dog_Fixed' ordinal='15' />
+            <column datatype='integer' name='DNA_Tested' ordinal='16' />
+            <column datatype='string' name='Dimension' ordinal='17' />
+            <column datatype='integer' name='Sign_in_Count' ordinal='18' />
+            <column datatype='integer' name='Max_Dogs' ordinal='19' />
+            <column datatype='integer' name='Membership_ID' ordinal='20' />
+            <column datatype='integer' name='Subscribed' ordinal='21' />
+            <column datatype='string' name='City' ordinal='22' />
+            <column datatype='string' name='State' ordinal='23' />
+            <column datatype='string' name='Zip' ordinal='24' />
+            <column datatype='string' name='Country' ordinal='25' />
+            <column datatype='integer' name='Exclude' ordinal='26' />
+            <column datatype='integer' name='Free_Start_User' ordinal='27' />
+            <column datatype='datetime' name='Last_Active_At' ordinal='28' />
+            <column datatype='integer' name='Membership_Type' ordinal='29' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>Dog ID</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Dog ID]</local-name>
+            <parent-name>[dog_id_max_ranks]</parent-name>
+            <remote-alias>Dog ID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Tests Completed</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total Tests Completed]</local-name>
+            <parent-name>[dog_id_max_ranks]</parent-name>
+            <remote-alias>Total Tests Completed</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Mean ITI (days)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Mean ITI (days)]</local-name>
+            <parent-name>[dog_id_max_ranks]</parent-name>
+            <remote-alias>Mean ITI (days)</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Mean ITI (minutes)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Mean ITI (minutes)]</local-name>
+            <parent-name>[dog_id_max_ranks]</parent-name>
+            <remote-alias>Mean ITI (minutes)</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Median ITI (days)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Median ITI (days)]</local-name>
+            <parent-name>[dog_id_max_ranks]</parent-name>
+            <remote-alias>Median ITI (days)</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Median ITI (minutes)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Median ITI (minutes)]</local-name>
+            <parent-name>[dog_id_max_ranks]</parent-name>
+            <remote-alias>Median ITI (minutes)</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Time diff between first and last game (days)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Time diff between first and last game (days)]</local-name>
+            <parent-name>[dog_id_max_ranks]</parent-name>
+            <remote-alias>Time diff between first and last game (days)</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Time diff between first and last game (minutes)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Time diff between first and last game (minutes)]</local-name>
+            <parent-name>[dog_id_max_ranks]</parent-name>
+            <remote-alias>Time diff between first and last game (minutes)</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>User ID</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[User ID]</local-name>
+            <parent-name>[dog_id_max_ranks]</parent-name>
+            <remote-alias>User ID</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Gender</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Gender]</local-name>
+            <parent-name>[dog_id_max_ranks]</parent-name>
+            <remote-alias>Gender</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Birthday</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Birthday]</local-name>
+            <parent-name>[dog_id_max_ranks]</parent-name>
+            <remote-alias>Birthday</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Breed</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Breed]</local-name>
+            <parent-name>[dog_id_max_ranks]</parent-name>
+            <remote-alias>Breed</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Breed_Type</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Breed_Type]</local-name>
+            <parent-name>[dog_id_max_ranks]</parent-name>
+            <remote-alias>Breed_Type</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Breed_Group</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Breed_Group]</local-name>
+            <parent-name>[dog_id_max_ranks]</parent-name>
+            <remote-alias>Breed_Group</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Weight</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Weight]</local-name>
+            <parent-name>[dog_id_max_ranks]</parent-name>
+            <remote-alias>Weight</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Dog_Fixed</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Dog_Fixed]</local-name>
+            <parent-name>[dog_id_max_ranks]</parent-name>
+            <remote-alias>Dog_Fixed</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DNA_Tested</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[DNA_Tested]</local-name>
+            <parent-name>[dog_id_max_ranks]</parent-name>
+            <remote-alias>DNA_Tested</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Dimension</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Dimension]</local-name>
+            <parent-name>[dog_id_max_ranks]</parent-name>
+            <remote-alias>Dimension</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sign_in_Count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Sign_in_Count]</local-name>
+            <parent-name>[dog_id_max_ranks]</parent-name>
+            <remote-alias>Sign_in_Count</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Max_Dogs</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Max_Dogs]</local-name>
+            <parent-name>[dog_id_max_ranks]</parent-name>
+            <remote-alias>Max_Dogs</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Membership_ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Membership_ID]</local-name>
+            <parent-name>[dog_id_max_ranks]</parent-name>
+            <remote-alias>Membership_ID</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Subscribed</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Subscribed]</local-name>
+            <parent-name>[dog_id_max_ranks]</parent-name>
+            <remote-alias>Subscribed</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>City</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[City]</local-name>
+            <parent-name>[dog_id_max_ranks]</parent-name>
+            <remote-alias>City</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[State]</local-name>
+            <parent-name>[dog_id_max_ranks]</parent-name>
+            <remote-alias>State</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Zip</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Zip]</local-name>
+            <parent-name>[dog_id_max_ranks]</parent-name>
+            <remote-alias>Zip</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Country</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Country]</local-name>
+            <parent-name>[dog_id_max_ranks]</parent-name>
+            <remote-alias>Country</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Exclude</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Exclude]</local-name>
+            <parent-name>[dog_id_max_ranks]</parent-name>
+            <remote-alias>Exclude</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Free_Start_User</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Free_Start_User]</local-name>
+            <parent-name>[dog_id_max_ranks]</parent-name>
+            <remote-alias>Free_Start_User</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Last_Active_At</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Last_Active_At]</local-name>
+            <parent-name>[dog_id_max_ranks]</parent-name>
+            <remote-alias>Last_Active_At</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Membership_Type</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Membership_Type]</local-name>
+            <parent-name>[dog_id_max_ranks]</parent-name>
+            <remote-alias>Membership_Type</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[dog_id_max_ranks]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>3</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:AD10001:no:A1:AD2147483647:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Breed Group' datatype='string' name='[Breed_Group]' role='dimension' type='nominal' />
+      <column caption='Breed Type' datatype='string' name='[Breed_Type]' role='dimension' type='nominal' />
+      <column datatype='string' name='[City]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='DNA Tested' datatype='integer' name='[DNA_Tested]' role='measure' type='quantitative' />
+      <column caption='Dog Fixed' datatype='integer' name='[Dog_Fixed]' role='measure' type='quantitative' />
+      <column caption='Free Start User' datatype='integer' name='[Free_Start_User]' role='measure' type='quantitative' />
+      <column caption='Last Active At' datatype='datetime' name='[Last_Active_At]' role='dimension' type='ordinal' />
+      <column caption='Max Dogs' datatype='integer' name='[Max_Dogs]' role='measure' type='quantitative' />
+      <column caption='Membership ID' datatype='integer' name='[Membership_ID]' role='dimension' type='ordinal' />
+      <column caption='Membership Type' datatype='integer' name='[Membership_Type]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Sign in Count' datatype='integer' name='[Sign_in_Count]' role='measure' type='quantitative' />
+      <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column datatype='string' name='[Zip]' role='dimension' semantic-role='[ZipCode].[Name]' type='nominal' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.55625' measure-ordering='alphabetic' measure-percentage='0.44375' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='dog_id_max_ranks (dognition_data_aggregated_by_dogid)' name='excel-direct.1ps9gs50pd4cp61dhcytx07q4hay' />
+          </datasources>
+          <datasource-dependencies datasource='excel-direct.1ps9gs50pd4cp61dhcytx07q4hay'>
+            <column caption='Sign in Count' datatype='integer' name='[Sign_in_Count]' role='measure' type='quantitative' />
+            <column-instance column='[Sign_in_Count]' derivation='Sum' name='[sum:Sign_in_Count:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='false' />
+        </view>
+        <style />
+        <panes>
+          <pane>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+                <format attr='size' value='0.2738673985004425' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[excel-direct.1ps9gs50pd4cp61dhcytx07q4hay].[sum:Sign_in_Count:qk]</rows>
+        <cols />
+      </table>
+    </worksheet>
+  </worksheets>
+  <windows source-height='28'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <selection-collection>
+          <tuple-selection>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields>
+                    <field>[excel-direct.1ps9gs50pd4cp61dhcytx07q4hay].[sum:Sign_in_Count:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[excel-direct.1ps9gs50pd4cp61dhcytx07q4hay].[sum:Sign_in_Count:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>1489</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields>
+                    <field>[excel-direct.1ps9gs50pd4cp61dhcytx07q4hay].[sum:Sign_in_Count:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[excel-direct.1ps9gs50pd4cp61dhcytx07q4hay].[sum:Sign_in_Count:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>1489</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields>
+                    <field>[excel-direct.1ps9gs50pd4cp61dhcytx07q4hay].[sum:Sign_in_Count:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[excel-direct.1ps9gs50pd4cp61dhcytx07q4hay].[sum:Sign_in_Count:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>1489</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields>
+                    <field>[excel-direct.1ps9gs50pd4cp61dhcytx07q4hay].[sum:Sign_in_Count:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[excel-direct.1ps9gs50pd4cp61dhcytx07q4hay].[sum:Sign_in_Count:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>1489</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields>
+                    <field>[excel-direct.1ps9gs50pd4cp61dhcytx07q4hay].[sum:Sign_in_Count:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[excel-direct.1ps9gs50pd4cp61dhcytx07q4hay].[sum:Sign_in_Count:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>1489</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields>
+                    <field>[excel-direct.1ps9gs50pd4cp61dhcytx07q4hay].[sum:Sign_in_Count:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[excel-direct.1ps9gs50pd4cp61dhcytx07q4hay].[sum:Sign_in_Count:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>1489</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields>
+                    <field>[excel-direct.1ps9gs50pd4cp61dhcytx07q4hay].[sum:Sign_in_Count:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[excel-direct.1ps9gs50pd4cp61dhcytx07q4hay].[sum:Sign_in_Count:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>1489</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields>
+                    <field>[excel-direct.1ps9gs50pd4cp61dhcytx07q4hay].[sum:Sign_in_Count:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[excel-direct.1ps9gs50pd4cp61dhcytx07q4hay].[sum:Sign_in_Count:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>1489</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields>
+                    <field>[excel-direct.1ps9gs50pd4cp61dhcytx07q4hay].[sum:Sign_in_Count:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[excel-direct.1ps9gs50pd4cp61dhcytx07q4hay].[sum:Sign_in_Count:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>1489</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields>
+                    <field>[excel-direct.1ps9gs50pd4cp61dhcytx07q4hay].[sum:Sign_in_Count:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[excel-direct.1ps9gs50pd4cp61dhcytx07q4hay].[sum:Sign_in_Count:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>1489</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields>
+                    <field>[excel-direct.1ps9gs50pd4cp61dhcytx07q4hay].[sum:Sign_in_Count:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[excel-direct.1ps9gs50pd4cp61dhcytx07q4hay].[sum:Sign_in_Count:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>1489</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields>
+                    <field>[excel-direct.1ps9gs50pd4cp61dhcytx07q4hay].[sum:Sign_in_Count:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[excel-direct.1ps9gs50pd4cp61dhcytx07q4hay].[sum:Sign_in_Count:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>1489</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields>
+                    <field>[excel-direct.1ps9gs50pd4cp61dhcytx07q4hay].[sum:Sign_in_Count:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[excel-direct.1ps9gs50pd4cp61dhcytx07q4hay].[sum:Sign_in_Count:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>1489</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields>
+                    <field>[excel-direct.1ps9gs50pd4cp61dhcytx07q4hay].[sum:Sign_in_Count:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[excel-direct.1ps9gs50pd4cp61dhcytx07q4hay].[sum:Sign_in_Count:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>1489</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields>
+                    <field>[excel-direct.1ps9gs50pd4cp61dhcytx07q4hay].[sum:Sign_in_Count:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[excel-direct.1ps9gs50pd4cp61dhcytx07q4hay].[sum:Sign_in_Count:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>1489</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields>
+                    <field>[excel-direct.1ps9gs50pd4cp61dhcytx07q4hay].[sum:Sign_in_Count:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[excel-direct.1ps9gs50pd4cp61dhcytx07q4hay].[sum:Sign_in_Count:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>1489</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields>
+                    <field>[excel-direct.1ps9gs50pd4cp61dhcytx07q4hay].[sum:Sign_in_Count:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[excel-direct.1ps9gs50pd4cp61dhcytx07q4hay].[sum:Sign_in_Count:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>1489</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields>
+                    <field>[excel-direct.1ps9gs50pd4cp61dhcytx07q4hay].[sum:Sign_in_Count:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[excel-direct.1ps9gs50pd4cp61dhcytx07q4hay].[sum:Sign_in_Count:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>1695</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields>
+                    <field>[excel-direct.1ps9gs50pd4cp61dhcytx07q4hay].[sum:Sign_in_Count:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[excel-direct.1ps9gs50pd4cp61dhcytx07q4hay].[sum:Sign_in_Count:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>1695</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields>
+                    <field>[excel-direct.1ps9gs50pd4cp61dhcytx07q4hay].[sum:Sign_in_Count:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[excel-direct.1ps9gs50pd4cp61dhcytx07q4hay].[sum:Sign_in_Count:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>1695</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields>
+                    <field>[excel-direct.1ps9gs50pd4cp61dhcytx07q4hay].[sum:Sign_in_Count:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[excel-direct.1ps9gs50pd4cp61dhcytx07q4hay].[sum:Sign_in_Count:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>1695</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields>
+                    <field>[excel-direct.1ps9gs50pd4cp61dhcytx07q4hay].[sum:Sign_in_Count:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[excel-direct.1ps9gs50pd4cp61dhcytx07q4hay].[sum:Sign_in_Count:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>1695</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields>
+                    <field>[excel-direct.1ps9gs50pd4cp61dhcytx07q4hay].[sum:Sign_in_Count:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[excel-direct.1ps9gs50pd4cp61dhcytx07q4hay].[sum:Sign_in_Count:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>1695</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields>
+                    <field>[excel-direct.1ps9gs50pd4cp61dhcytx07q4hay].[sum:Sign_in_Count:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[excel-direct.1ps9gs50pd4cp61dhcytx07q4hay].[sum:Sign_in_Count:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>1695</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields>
+                    <field>[excel-direct.1ps9gs50pd4cp61dhcytx07q4hay].[sum:Sign_in_Count:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[excel-direct.1ps9gs50pd4cp61dhcytx07q4hay].[sum:Sign_in_Count:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>1695</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields>
+                    <field>[excel-direct.1ps9gs50pd4cp61dhcytx07q4hay].[sum:Sign_in_Count:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[excel-direct.1ps9gs50pd4cp61dhcytx07q4hay].[sum:Sign_in_Count:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>1695</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields>
+                    <field>[excel-direct.1ps9gs50pd4cp61dhcytx07q4hay].[sum:Sign_in_Count:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[excel-direct.1ps9gs50pd4cp61dhcytx07q4hay].[sum:Sign_in_Count:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>1695</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields>
+                    <field>[excel-direct.1ps9gs50pd4cp61dhcytx07q4hay].[sum:Sign_in_Count:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[excel-direct.1ps9gs50pd4cp61dhcytx07q4hay].[sum:Sign_in_Count:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>1695</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields>
+                    <field>[excel-direct.1ps9gs50pd4cp61dhcytx07q4hay].[sum:Sign_in_Count:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[excel-direct.1ps9gs50pd4cp61dhcytx07q4hay].[sum:Sign_in_Count:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>1695</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields>
+                    <field>[excel-direct.1ps9gs50pd4cp61dhcytx07q4hay].[sum:Sign_in_Count:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[excel-direct.1ps9gs50pd4cp61dhcytx07q4hay].[sum:Sign_in_Count:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>1695</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields>
+                    <field>[excel-direct.1ps9gs50pd4cp61dhcytx07q4hay].[sum:Sign_in_Count:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[excel-direct.1ps9gs50pd4cp61dhcytx07q4hay].[sum:Sign_in_Count:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>1695</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields>
+                    <field>[excel-direct.1ps9gs50pd4cp61dhcytx07q4hay].[sum:Sign_in_Count:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[excel-direct.1ps9gs50pd4cp61dhcytx07q4hay].[sum:Sign_in_Count:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>1695</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields>
+                    <field>[excel-direct.1ps9gs50pd4cp61dhcytx07q4hay].[sum:Sign_in_Count:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[excel-direct.1ps9gs50pd4cp61dhcytx07q4hay].[sum:Sign_in_Count:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>1695</value>
+              </tuple>
+            </tuple-reference>
+          </tuple-selection>
+        </selection-collection>
+        <highlight>
+          <color-one-way>
+            <field>[excel-direct.1ps9gs50pd4cp61dhcytx07q4hay].[none:Country:nk]</field>
+            <field>[excel-direct.1ps9gs50pd4cp61dhcytx07q4hay].[none:State:nk]</field>
+            <field>[excel-direct.1ps9gs50pd4cp61dhcytx07q4hay].[none:User ID:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='114'>
+      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
+      SUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
